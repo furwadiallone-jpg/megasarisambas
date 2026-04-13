@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sari | Premium Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://www.instagram.com/embed.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loader">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Memuat...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="gambar/logo mega sari.png" alt="Mega Sari Logo" class="logo-img">
+                <span class="logo-text">MEGA SARI</span>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#produk" class="nav-link">Produk</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('gambar/back.png'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Kenyamanan Bertemu Kemewahan</h1>
+            <p>Temukan koleksi furniture terbaik untuk setiap sudut rumah Anda.</p>
+            <a href="#produk" class="btn btn-primary">Jelajahi Koleksi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="gambar/riyan.jpg" alt="Mega Sari Furniture">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Tentang Mega Sari</h2>
+                    <p class="lead-text">Dedikasi kami adalah menghadirkan kenyamanan dan estetika ke dalam hunian Anda sejak tahun 2011.</p>
+                    <p>Mega Sari Furniture bermula dari sebuah bengkel kayu kecil dengan visi besar: menciptakan furniture berkualitas tinggi yang tahan lama dan indah.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <strong>Kualitas Premium</strong>
+                            <p>Hanya menggunakan bahan kayu solid dan kain pilihan terbaik.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hammer"></i>
+                            <strong>Custom Desain</strong>
+                            <p>Kami bisa menyesuaikan ukuran dan warna sesuai kebutuhan Anda.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <strong>Pengiriman Cepat</strong>
+                            <p>Layanan pengiriman ke seluruh nusantara dengan aman dan tepat waktu.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <strong>Konsultasi Gratis</strong>
+                            <p>Tim desainer kami siap membantu Anda memilih furniture yang tepat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Unggulan</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="gambar/1.png" alt="Kasur Bearland">
+                    <h3>Kasur Bearland</h3>
+                    <p class="price">Mulai Rp 12.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kasur Bearland')">Pesan Sekarang</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="gambar/2.png" alt="Lemari Dapur">
+                    <h3>Lemari Dapur</h3>
+                    <p class="price">Mulai Rp 3.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Lemari Dapur')">Pesan Sekarang</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="gambar/3.png" alt="Nakas">
+                    <h3>Nakas Premium</h3>
+                    <p class="price">Mulai Rp 4.500.000</p>
+                    <button class="btn btn-order" onclick="pesan('Nakas Premium')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/5.png" alt="Sofa Kaki Besi">
+                    <h3>Sofa Kaki Besi</h3>
+                    <p class="price">Mulai Rp 7.150.000</p>
+                    <button class="btn btn-order" onclick="pesan('Sofa Kaki Besi')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/6.png" alt="Sofa Kulit Jumbo">
+                    <h3>Sofa Kulit Jumbo</h3>
+                    <p class="price">Mulai Rp 16.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Sofa Kulit Jumbo Premium')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/7.png" alt="Sofa Busa Premium">
+                    <h3>Sofa Busa Premium</h3>
+                    <p class="price">Mulai Rp 5.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Sofa Busa Premium')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/8.png" alt="Kursi Kayu Metrong">
+                    <h3>Kursi Kayu Metrong Ukir</h3>
+                    <p class="price">Mulai Rp 2.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kursi Kayu Metrong Ukir')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/10.png" alt="Kursi Jati Jepara">
+                    <h3>Kursi Jati Jepara</h3>
+                    <p class="price">Mulai Rp 5.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kursi Jati Jepara')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/11.png" alt="Sofa L Beranak Jumbo">
+                    <h3>Sofa L Beranak Jumbo</h3>
+                    <p class="price">Mulai Rp 4.500.000</p>
+                    <button class="btn btn-order" onclick="pesan('Sofa L Beranak Jumbo')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/12.png" alt="Meja Komor Jumbo">
+                    <h3>Meja Komor Jumbo</h3>
+                    <p class="price">Mulai Rp 3.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Meja Makan Jati')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/13.png" alt="Lemari Jati">
+                    <h3>Kursi Kayu Medang</h3>
+                    <p class="price">Mulai Rp 6.500.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kursi Kayu Medang')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/14.png" alt="Kursi Jati Jepara">
+                    <h3>Kursi Jati Jepara Deluxe</h3>
+                    <p class="price">Mulai Rp 5.500.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kursi Jati Jepara Deluxe')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/16.png" alt="Kursi Kayu Jati Arinbi">
+                    <h3>Kursi Kayu Jati Arinbi</h3>
+                    <p class="price">Mulai Rp 3.500.000</p>
+                    <button class="btn btn-order" onclick="pesan('Kursi Kayu Jati Arinbi')">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="gambar/17.png" alt="Lemari Besi">
+                    <h3>Lemari Besi</h3>
+                    <p class="price">Mulai Rp 6.000.000</p>
+                    <button class="btn btn-order" onclick="pesan('Lemari Besi')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <h2 class="section-title">Ikuti Kami di Instagram</h2>
+            <div class="instagram-container" style="display: flex; justify-content: center; align-items: center;">
+                <div class="instagram-card" style="text-align: center;">
+                    <div class="instagram-header" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <img src="gambar/logo mega sari.png" alt="Mega Sari" class="ig-logo">
+                        <div class="ig-info">
+                            <h3>@megasari.furniture</h3>
+                            <p>Premium Furniture Collection</p>
+                        </div>
+                    </div>
+                    <div class="instagram-embed" style="display: flex; justify-content: center;">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/megasari_sambas/" data-instgrm-version="14"></blockquote>
+                    </div>
+                    <a href="https://www.instagram.com/megasari_sambas/" target="_blank" class="btn btn-instagram">
+                        <i class="fab fa-instagram"></i> Kunjungi Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Showroom Kami</h3>
+                        <p>Jl. Tionghoa No.225 Pasar Melayu<br>Sambas, Kalimantan Barat</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Hubungi Langsung</h3>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281352041668" target="_blank">+62 813 5204 1668</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:hello@megasari.com">hello@megasari.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Jam Operasional</h3>
+                        <p>Setiap Hari 07.30-17.00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pertanyaan</h3>
+                    <form id="formPesan">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="email@anda.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan Anda</label>
+                            <textarea id="pesan" rows="5" placeholder="Tanyakan ketersediaan produk atau custom desain..." required></textarea>
+                        </div>
+                        <button type="button" class="btn btn-submit" onclick="kirimPesanForm()">Kirim Pertanyaan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="peta" class="map-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kami</h2>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8236891234567!2d109.3082106!3d1.3618111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e4bbdff4ad9b5b%3A0x2541a6526d09172f!2sToko%20Mebel%20Mega%20Sari!5e0!3m2!1sid!2sid!4v1704067200000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Mega Sari Furniture</h3>
+                <p>Menyediakan Lemari, Meja, Kursi, Wastafel, hingga Karpet Eksklusif berkualitas premium.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kategori Produk</h4>
+                <ul>
+                    <li><a href="#produk">Sofa</a></li>
+                    <li><a href="#produk">Meja</a></li>
+                    <li><a href="#produk">Kursi</a></li>
+                    <li><a href="#produk">Lemari</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mega Sari Furniture. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
+
